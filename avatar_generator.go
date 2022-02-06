@@ -38,7 +38,7 @@ func GetCat(seed, outPath string) error {
 		{name: "accessorie", id: rand.Intn(20) + 1},
 	}
 
-	return createAvatar(id, "cat", outPath, parts)
+	return createAvatar(id, AvatarType_CAT, outPath, parts)
 }
 
 func GetBird(seed, outPath string) error {
@@ -55,7 +55,7 @@ func GetBird(seed, outPath string) error {
 		{name: "accessorie", id: rand.Intn(20) + 1},
 	}
 
-	return createAvatar(id, "bird", outPath, parts)
+	return createAvatar(id, AvatarType_BIRD, outPath, parts)
 }
 
 func GetMobilizon(seed, outPath string) error {
@@ -73,7 +73,7 @@ func GetMobilizon(seed, outPath string) error {
 		{name: "hat", id: rand.Intn(20) + 1},
 	}
 
-	return createAvatar(id, "mobilizon", outPath, parts)
+	return createAvatar(id, AvatarType_MOBILIZON, outPath, parts)
 }
 
 func getAvatarPath(typ string) (string, error) {

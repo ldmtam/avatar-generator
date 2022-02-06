@@ -11,7 +11,7 @@ func TestGetCat(t *testing.T) {
 	err := os.MkdirAll("./out", 0777)
 	assert.Nil(t, err)
 
-	err = GetCat(AvatarType_CAT, "./out")
+	err = GetCat("cat1", "./out")
 	assert.Nil(t, err)
 }
 
@@ -19,7 +19,7 @@ func TestGetBird(t *testing.T) {
 	err := os.MkdirAll("./out", 0777)
 	assert.Nil(t, err)
 
-	err = GetBird(AvatarType_BIRD, "./out")
+	err = GetBird("bird2", "./out")
 	assert.Nil(t, err)
 }
 
@@ -27,6 +27,6 @@ func TestGetMobilizon(t *testing.T) {
 	err := os.MkdirAll("./out", 0777)
 	assert.Nil(t, err)
 
-	err = GetMobilizon(AvatarType_MOBILIZON, "./out")
+	err = GetMobilizon("mobilizon3", "./out")
 	assert.Nil(t, err)
 }
